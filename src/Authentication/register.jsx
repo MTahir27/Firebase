@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { InputField } from "../Components/InputField";
 import { auth } from "../Config/Firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -17,7 +17,7 @@ export const Register = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
-        const user = userCredential.user;
+        // const user = userCredential.user;
         navigate("/login");
         // ...
       })

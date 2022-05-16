@@ -1,5 +1,5 @@
 import React from "react";
-import { PageNavbar } from "../../Components/InputField/Header";
+import { PageNavbar } from "../../Components/Header";
 
 export const Home = () => {
   return (

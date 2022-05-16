@@ -4,7 +4,7 @@ import { Navbar, Container, Nav, Button } from "react-bootstrap";
 
 export const PageNavbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light">
       <Container>
         <Navbar.Brand>
           <Link to="/" className="text-muted text-decoration-none">

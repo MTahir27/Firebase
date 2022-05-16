@@ -3,7 +3,7 @@ import { Form, Row, Col, Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { InputField } from "../Components/InputField";
 import { auth } from "../Config/Firebase";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -14,7 +14,7 @@ export const Login = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
-        const user = userCredential.user;
+        // const user = userCredential.user;
         navigate("/");
         // ...
       })
