@@ -19,3 +19,8 @@ h6,
 p {
   margin: 0;
 }
+
+/* Font Sizes */
+.fw-semibold {
+  font-weight: 500;
+}
