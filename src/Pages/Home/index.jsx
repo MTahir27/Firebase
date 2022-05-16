@@ -1,5 +1,10 @@
 import React from "react";
+import { PageNavbar } from "../../Components/InputField/Header";
 
 export const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <PageNavbar />
+    </div>
+  );
 };

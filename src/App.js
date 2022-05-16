@@ -5,7 +5,7 @@ import { ForgetPassword } from "./Authentication/forgetPassword";
 import { Login } from "./Authentication/login";
 import { Register } from "./Authentication/register";
 import { Home } from "./Pages/Home";
-import { Error_404 } from "./Pages/Home/Error_404";
+import { Error_404 } from "./Pages/Error_404";
 
 function App() {
   return (

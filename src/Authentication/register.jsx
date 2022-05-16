@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { InputField } from "../Components/InputField";
 
 export const Register = () => {
@@ -69,12 +70,12 @@ export const Register = () => {
                 <Col>
                   <div className="d-flex gap-3">
                     <p>Already have an Account ?</p>
-                    <a
-                      href="#"
+                    <Link
+                      to="/login"
                       className="text-uppercase text-decoration-none fw-semibold"
                     >
                       Login Account
-                    </a>
+                    </Link>
                   </div>
                 </Col>
               </Row>

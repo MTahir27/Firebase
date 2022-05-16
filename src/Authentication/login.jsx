@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { InputField } from "../Components/InputField";
 
 export const Login = () => {
@@ -30,12 +31,12 @@ export const Login = () => {
                 </Col>
 
                 <Col className="text-end">
-                  <a
-                    href="#"
+                  <Link
+                    to="/forgetpassword"
                     className="text-uppercase text-decoration-none fw-semibold"
                   >
                     Forget Password?
-                  </a>
+                  </Link>
                 </Col>
 
                 <Col xs={12}>
@@ -51,12 +52,12 @@ export const Login = () => {
                 <Col>
                   <div className="d-flex gap-3">
                     <p>Don't have an Account</p>
-                    <a
-                      href="#"
+                    <Link
+                      to="/register"
                       className="text-uppercase text-decoration-none fw-semibold"
                     >
                       Create Account
-                    </a>
+                    </Link>
                   </div>
                 </Col>
               </Row>
